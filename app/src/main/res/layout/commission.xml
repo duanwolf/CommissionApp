@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.commission.CommissionActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_gravity="right"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Lock"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/padding_end"
+            android:textSize="@dimen/other_size"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Lock销售数量"
+            android:textSize="@dimen/other_size"
+            android:gravity="center_vertical"
+            android:background="#FFFFFF"
+            android:textColor="@android:color/black"
+            android:id="@+id/lnum"
+            android:inputType="number|numberSigned"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_gravity="right"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Stocks"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/padding_end"
+            android:textSize="@dimen/other_size"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Stocks销售数量"
+            android:textSize="@dimen/other_size"
+            android:gravity="center_vertical"
+            android:background="#FFFFFF"
+            android:textColor="@android:color/black"
+            android:id="@+id/snum"
+            android:numeric="integer"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_gravity="right"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Barrel"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_end"
+            android:textSize="@dimen/other_size"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Barrel销售数量"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/other_size"
+            android:background="#FFFFFF"
+            android:textColor="@android:color/black"
+            android:id="@+id/bnum"
+            android:inputType="number"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_gravity="right"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="City"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_end"
+            android:textSize="@dimen/other_size"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="city name"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/other_size"
+            android:background="#FFFFFF"
+            android:textColor="@android:color/black"
+            android:id="@+id/city"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="commit"
+        android:background="@drawable/round_coner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/title_size"
+        android:layout_marginLeft="@dimen/padding_end"
+        android:layout_marginRight="@dimen/padding_end" />
+
+</LinearLayout>

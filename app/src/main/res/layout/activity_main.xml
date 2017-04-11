@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:foregroundGravity="center_vertical|center_horizontal" >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:text="登录"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/dodger_blue" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_gravity="right"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/other_size"
+            android:drawableLeft="@mipmap/icon_zc1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:textColor="@android:color/black"
+            android:drawablePadding="20sp"
+            android:hint="请输入用户名"
+            android:background="#FFFFFF"
+            android:paddingLeft="@dimen/padding_end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_gravity="right"
+        android:background="#FFFFFF"
+        android:layout_marginTop="1dp" >
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:textSize="@dimen/other_size"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_zc3"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:drawablePadding="20sp"
+            android:hint="请输入密码"
+            android:background="#FFFFFF"
+            android:paddingLeft="@dimen/padding_end"
+            android:password="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="@drawable/round_coner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/title_size"
+        android:layout_marginLeft="@dimen/padding_end"
+        android:layout_marginRight="@dimen/padding_end" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Commission</string>
+    <string-array name="query_list">
+        <item>时间</item>
+        <item>地点</item>
+    </string-array>
+</resources>
